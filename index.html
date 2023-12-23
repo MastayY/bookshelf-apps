@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Bookshelf Apps</title>
+</head>
+<body>
+    <header>
+        <a href="#" id="logo">Bookshelf Apps</a>
+    </header>
+    <main>
+
+        <section class="new-book-section">
+            <h2>Tambah Buku Baru</h2>
+            <form action="" id="input-form">
+                <div class="input">
+                    <label for="bookTitle">Judul Buku</label>
+                    <input type="text" placeholder="Masukkan Judul Buku" required autocomplete="off" name="bookTitle" id="bookTitle">
+                </div>
+                <div class="input">
+                    <label for="bookTitle">Penulis Buku</label>
+                    <input type="text" placeholder="Masukkan Penulis Buku" required autocomplete="off" name="bookAuthor" id="bookAuthor">
+                </div>
+                <div class="input">
+                    <label for="bookTitle">Tahun Terbit</label>
+                    <input type="number" placeholder="Masukkan Tahun Terbit" required name="bookYear" id="bookYear">
+                </div>
+                <div class="input">
+                    <label for="bookIsCompleted" class="inline">Selesai Dibaca? </label>
+                    <input type="checkbox" name="bookIsCompleted" id="bookIsCompleted">
+                </div>
+                
+                <button type="submit" id="submit-btn">Tambahkan</button>
+            </form>
+        </section>
+
+        <section id="bookshelf-complete">
+            <h2>Buku Sudah Selesai Dibaca</h2>
+            <div id="book-rack-complete"></div>
+        </section>
+        <section id="bookshelf-uncomplete">
+            <h2>Buku Belum Selesai Dibaca</h2>
+            <div id="book-rack-uncomplete"></div>
+        </section>
+    </main>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
